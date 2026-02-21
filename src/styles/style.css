@@ -82,7 +82,7 @@
 
     --fs-xl: clamp(4rem, 11vw + 1rem, 12rem);
     --fs-initial: clamp(8rem, 25vw + 1rem, 20rem);
-    --fs-card-h3: clamp(3rem, 6vw + 1rem, 6.4rem);
+    --fs-card-h3: clamp(3rem, 6vw + 1rem, 8rem);
     --fs-body: clamp(0.8rem, 0.2vw + 0.7rem, 0.9rem);
 
     --grid-size: 24px;
@@ -165,7 +165,7 @@
     }
 
     p {
-      inline-size: 48ch;
+      max-inline-size: 48ch;
       line-height: 1.6;
       block-size: fit-content;
     }
@@ -182,7 +182,7 @@
 
   .team-reveal__item {
     block-size: 100%;
-    border-radius: 1.5rem;
+    border-radius: 16px;
     border: 2px solid var(--terminal-grid);
     flex: 1;
     inline-size: 100%;
@@ -217,19 +217,17 @@
     align-items: center;
     background-color: var(--color-text);
     block-size: calc(100% + 4px);
-    border-radius: 1.5rem;
+    border-radius: 16px;
     display: flex;
     flex-direction: column;
     gap: 2em;
     inline-size: calc(100% + 4px);
-    padding: 2rem;
     will-change: transform;
   }
 
   .team-reveal__image {
     aspect-ratio: 1;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
+    border-radius: 8px 8px 0 0;
     overflow: hidden;
   }
 
@@ -239,6 +237,7 @@
     flex-direction: column;
     gap: 1rem;
     text-align: center;
+    padding-inline: 2rem;
 
     h3 {
       color: var(--color-accent);
